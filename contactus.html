@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+
+    <nav class="navbar2">
+        <ul>
+            <li class="items"><a href="index.htm">Home</a></li>
+            <li class="items"><a href="products.html">Our Products</a></li>
+            <li class="items"><a href="payments.html">Pay Online</a></li>
+            <li class="items"><a href="contactus.html">Contact Us</a></li>
+            <!-- <p class="gst">GST No.:1234566789</p> -->
+
+        </ul>
+        <p class="gst">GST No.:1234566789</p>
+
+
+    </nav>
+    <section>
+    <div class="contact">
+        <div class="contactinfo">
+            <div>
+                <h2>Contact Us</h2>
+                <ul class="info">
+                    <li>
+                        <span><img src="images/location.png" alt=""></span>
+                        <span>
+                            Sector-70,Ballabgarh<br>
+                            Village Mujeri<br>
+                            Faridabad,121004
+                        </span>
+                    </li>
+                    <li>
+                        <span><img src="images/mail.png" alt=""></span>
+                        <span>
+                            engineering@gmail.com
+                        </span>
+                    </li>
+                    <li>
+                        <span><img src="images/call.png" alt=""></span>
+                        <span>
+                            1234567890
+                        </span>
+                    </li>
+                </ul>
+
+            </div>
+            <ul class="social">
+                <li>
+                    <a href="#"><img src="images/1.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/2.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/5.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/3.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+        <div class="contactform">
+        <h2>Inquiry</h2>
+        <form onsubmit="sendEmail();reset();return false;">
+        <div class="formbox">
+            
+            <div class="inputbox w50">
+                <input type="text" id="name" required>
+                <span>First Name</span>
+            </div>
+
+            <div class="inputbox w50">
+                <input type="text" required>
+                <span>Last Name</span>
+            </div>
+
+            <div class="inputbox w50">
+                <input type="email" id="email" required>
+                <span>Email Address</span>
+            </div>
+
+            <div class="inputbox w50">
+                <input type="number" id="phone" required>
+                <span>Mobile Number</span>
+                
+            </div>
+
+            <div class="inputbox w100">
+                <textarea id="message" required></textarea>
+                <span>Leave Your Message</span>
+            </div>
+
+            <div class="inputbox w100">
+                <input type="submit" value="Send">
+            </div>
+            
+
+        </div>
+    </div>
+
+    </div>
+    </section>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <script>
+        function sendEmail()
+        {
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "vivekavisengineers@gmail.com",
+                Password : "emevhfgwulzrbyfb",
+                To : 'avisengineers@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Enquiry",
+                Body : "Name: " + document.getElementById("name").value
+                    +"<br> Email: " + document.getElementById("email").value
+                    +"<br> Phone No.: " + document.getElementById("phone").value
+                    +"<br> Message: " + document.getElementById("message").value
+                }).then(
+                message => alert("Inquiry Sent Successfully!")
+                );
+        }
+    </script>
+    <script src="js/home.js"></script>
+
+</body>
+</html>

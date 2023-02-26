@@ -1,0 +1,224 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+    
+}
+.all-products
+{
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    display: list-item;
+    
+    gap: 20px;
+    
+    /* padding: 0px 5vw; */
+
+}
+.product-sub-section{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 5px;
+    padding: 0px 4vw 15px;
+    display: flex ;
+    gap: 30px;
+    border: 4px solid black;
+    width: auto;
+    height: 470px;
+   
+   
+}
+
+.product-img{
+    padding: 20px  0;
+    margin: 20px 0;
+    /* border: 4px solid #50C878; */
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.product-title{
+    margin-top: 20px;
+    font-size: 30px;
+    /* border: 1px solid black; */
+}
+
+.product-detail{
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    font-family: 'lato',sans-serif;
+    opacity: 0.8;
+    font-size: 50px;
+    line-height: 30px;
+    
+    /* border: 2px solid red; */
+}
+.product-des{
+    /* border: 2px solid purple; */
+    margin-top: 0px;
+}
+
+
+.list-des
+{
+    margin-top: 20px;
+    /* border: 2px solid green; */
+    font-family: 'lato',sans-serif;
+    /* margin-right: 200px */
+    opacity: 0.85;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    
+}
+.product-btn {
+    /* border: 1px solid black; */
+    margin-top: -170px;
+    margin-left: 700px;
+    justify-content: center;
+    display: flex;
+}
+
+.product-contact-button{
+    padding: 15px 20px;
+    /* border: solid; */
+    /* border-radius: 8px; */
+    /* border-color: burlywood; */
+    /* border-width: 3px; */
+    border: none;
+    color: white;
+    outline: none;
+    margin-right: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: capitalize;
+    text-align: center;
+    transition: 0.4s;
+    background-color: #50C878;
+
+}
+.product-contact-button:hover{
+    padding: 15px 20px;
+    /* border: solid; */
+    /* border-radius: 8px; */
+    /* border-color: burlywood; */
+    /* border-width: 3px; */
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: capitalize;
+    text-align: center;
+    background-color:black;
+    /* border: 1px solid black; */
+    transition: 0.4s;
+
+}
+@media only screen and (max-width:850px){
+    .all-products{
+        padding-top: 40px;
+        margin-top: 0px;
+        width: 100%;
+        margin-bottom: 20px;
+        display: list-item;
+        gap: 20px;
+    /* padding: 0px 5vw; */
+    }
+    .product-sub-section{
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        margin-right: 5px;
+        padding: 0px 4vw 15px;
+        display: flex ;
+        flex-direction: column;
+        gap: 2px;
+        border: 4px solid black;
+        width: auto;
+        height: 630px;
+    }
+    .product-section{
+        display: list-item;
+    }
+    .product-img{
+        padding: 20px  0;
+        /* margin: 20px 0; */
+        margin-top: 20px;
+        margin-bottom: 5px;
+        border: 4px solid #50C878;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .product-detail{
+        margin: 0;
+        width: 100%;
+        height: 280px;
+        font-family: 'lato',sans-serif;
+        opacity: 0.8;
+        font-size: 50px;
+        line-height: 30px;
+        /* border: 2px solid red; */
+    }
+    .product-des{
+        /* border: 2px solid purple; */
+        margin-top: 0px;
+    }
+    .product-title{
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    
+    
+    .list-des
+    {
+        margin-top: 5px;
+        font-family: 'lato',sans-serif;
+        opacity: 0.85;
+        font-size: 10px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    .product-btn {
+        margin:0px;
+        margin-left: 0px;
+        justify-content: center;
+        display: flex;
+    }
+    .product-contact-button{
+        /* padding: 15px 10px; */
+        border: none;
+        color: white;
+        outline: none;
+        margin-right: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        text-transform: capitalize;
+        text-align: center;
+        transition: 0.4s;
+        background-color: #50C878;
+    
+    }
+    footer{
+        font-family: 'lato',sans-serif;
+        color: whitesmoke;
+        background: black;
+        width: auto;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 8px;
+    }
+    footer span{
+        font-weight: 600;
+    }
+    
+}
